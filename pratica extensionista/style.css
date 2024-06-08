@@ -1,0 +1,220 @@
+
+/*Geral*/
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+
+body::before {
+    content: "";
+    background-image: url("background.png"); 
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.4; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
+
+/*parte inicial*/
+
+header {
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    position: relative; 
+}
+
+.header-image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+/*definição das prorpiedades dos sections*/
+
+section {
+    width: 80%; 
+    margin: auto; 
+    background-color: #f0efff; 
+    padding: 20px; 
+    border-radius: 5px; 
+    margin-bottom: 20px; 
+    margin-top: 20px;
+    box-shadow: #333;
+}
+
+
+/* definição das letras*/
+h1, h2, h3 {
+    color: #4e2dd1;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: #000000;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-top: 20px;
+    line-height: 1.6;
+    margin: auto;
+    width: 80%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #4e2dd1;
+    text-decoration: none;
+}
+
+
+/* depoimentos */
+.depoimento-container {
+    display: flex;
+    overflow: hidden; 
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+.depoimento {
+    flex: 0 0 33%; 
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+/* estilo do carrousel de depoimentos*/
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.anterior, .proximo {
+    font-family: "Poppins", sans-serif;
+    background-color: #005cbf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.anterior:hover, .proximo:hover {
+    background-color: #2e1b7d;
+}
+
+/* contato */
+.contato-container {
+    width: 80%; 
+    margin: auto; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+
+/* definição do botão do whatsapp  */
+
+.botao-whatsapp {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.botao-whatsapp:hover {
+    background-color: #128C7E;
+}
+
+
+/* formulario */ 
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+    margin-bottom:100px;
+}
+
+.form-group {
+    margin-bottom: 20px; 
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dfbcff;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4e2dd1;
+    color: rgb(232, 232, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    width: 100%; 
+}
+
+input[type="submit"]:hover {
+    background-color: #2e1b7d;
+}
+
+/* rodapé */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
